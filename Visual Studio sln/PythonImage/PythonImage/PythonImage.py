@@ -5,7 +5,7 @@ from ImageLib import *
 a = numpy.zeros((255,255,3),'uint8')
 def Math(RGB,x,y,time):
     #Math function here 
-    r = x*y^2 #also x^2 + y^2 is interesting
+    r = x*abs(y)^2 #also x^2 + y^2 is interesting
     g = 0
     b = 0
     RGB = r,g,b
