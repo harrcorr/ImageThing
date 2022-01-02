@@ -1,3 +1,3 @@
-# hello
+[//]: <> (This is also a comment.)
 <h1> Image thing </h1>
 This program uses python to generate images using mathamtical formulae.
