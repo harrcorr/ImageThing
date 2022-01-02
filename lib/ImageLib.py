@@ -1,12 +1,12 @@
 #import dependencies
 import PIL
-import numpy
+import numpy as np
 from PIL import Image  
 import random
 #does wit it says
 def Open(path):
     try:
-        arr = Image.OPEN(path)
+        arr = Image.open(path)
         arr = np.asarray(arr)
     except:
         print("invalid path returning what i have")
@@ -20,7 +20,6 @@ def Save(arr,path):
 def getrgb(arr,x,y,time,func):
     r = 0
     g = 0
-    err = 0
     b = 0
     RGB = r,g,b
     RGB = arr[x,y]
